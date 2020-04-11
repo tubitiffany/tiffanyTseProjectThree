@@ -1,0 +1,35 @@
+@media (max-width: 850px) {
+    header {
+        h1 {
+            @include fontSize(40);
+        }
+        h2 {
+            @include fontSize(30);
+        }
+    }
+}
+
+@media (max-width: 690px) {
+    .wrapper {
+        width: 90%;
+    }
+    header {
+        line-height: 40px;
+    }
+    // quiz section media queries
+    main li {
+        @include fontSize(16);
+        p {
+            @include fontSize(20);
+        }
+    }
+
+    input[type=submit] {
+        @include fontSize(16);
+    }
+    
+    // result section media queries
+    .results h3 {
+        @include fontSize(40);
+    }
+}   

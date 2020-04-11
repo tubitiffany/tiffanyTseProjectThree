@@ -1,0 +1,10 @@
+// styles for result section of quiz
+.results {
+    height: 80px;
+    h3 {
+        @include padding-top(2);
+        @include fontSize(50);
+        line-height: 60px;
+        font-family: $accentFont;
+    }
+}

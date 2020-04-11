@@ -270,47 +270,90 @@ header h2 {
 }
 
 /* Questions DIV styles */
-main li {
-  height: auto;
-  font-size: 18px;
-  font-size: 1.8rem;
-  padding: 20px;
-}
-
-main li p {
-  font-size: 25px;
-  font-size: 2.5rem;
-}
-
 main .question {
   border: 3px solid lightblue;
   margin-top: 20px;
 }
 
+main li {
+  height: auto;
+  font-size: 18px;
+  font-size: 1.8rem;
+  padding: 20px;
+  position: relative;
+}
+
+main li p {
+  font-size: 25px;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
 main label {
-  display: inline-block;
-  width: 98%;
+  display: block;
   padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+main input[type=radio] {
+  position: absolute;
+  left: 15px;
+  margin-top: 6px;
 }
 
 main input[type=submit] {
-  width: 25%;
+  width: 300px;
   margin-top: 20px;
   padding: 10px;
   background: lightblue;
-  font-size: 15px;
-  font-size: 1.5rem;
+  font-size: 18px;
+  font-size: 1.8rem;
 }
 
-/* result section */
 .results {
-  height: 100px;
+  height: 80px;
 }
 
 .results h3 {
-  padding-top: 50px;
+  padding-top: 20px;
   font-size: 50px;
   font-size: 5rem;
   line-height: 60px;
   font-family: "Berkshire Swash", cursive;
+}
+
+@media (max-width: 850px) {
+  header h1 {
+    font-size: 40px;
+    font-size: 4rem;
+  }
+  header h2 {
+    font-size: 30px;
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 690px) {
+  .wrapper {
+    width: 90%;
+  }
+  header {
+    line-height: 40px;
+  }
+  main li {
+    font-size: 16px;
+    font-size: 1.6rem;
+  }
+  main li p {
+    font-size: 20px;
+    font-size: 2rem;
+  }
+  input[type=submit] {
+    font-size: 16px;
+    font-size: 1.6rem;
+  }
+  .results h3 {
+    font-size: 40px;
+    font-size: 4rem;
+  }
 }

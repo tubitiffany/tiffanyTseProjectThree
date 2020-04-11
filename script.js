@@ -118,6 +118,10 @@ const characters = {
         //the villain needs to take on whichever answer the user selects for the last question
         characters.Villain.question4 = userAnswers.question4;
 
+        // Update DOM to remove the submit button
+            $(".submitButton").remove();
+        
+
         //Looping through character's array to retrieve objects
         for (let sidekick in characters) {
             const sidekickObjects = characters[sidekick];

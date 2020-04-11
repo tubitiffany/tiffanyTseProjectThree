@@ -1,0 +1,39 @@
+/* Questions DIV styles */
+main {
+     .question {
+        border: 3px solid $accentColor;
+        margin-top: 20px;
+    }
+
+    li {
+        height: auto;
+        @include fontSize(18);
+        padding: 20px;
+        position: relative;
+        p {
+            @include fontSize(25);
+            margin-bottom: 15px;
+        }
+    }
+
+    label {
+        display: block;
+        padding-left: 20px;
+        margin-bottom: 15px;
+    }
+
+    input[type=radio] {
+        position: absolute;
+        left: 15px;
+        margin-top: 6px;
+    }
+
+    input[type=submit] {
+        width: 300px;
+        margin-top: 20px;
+        padding: 10px;
+        background: $accentColor;
+        @include fontSize(18);
+    }
+
+}
