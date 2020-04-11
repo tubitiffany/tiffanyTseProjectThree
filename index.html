@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Disney Sidekick Quiz</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash&display=swap" rel="stylesheet"> 
+</head>
+
+
+<body>
+    <header >
+        <h1 class="wrapper">Which Disney sidekick are you?</h1>
+        <h2 class="wrapper">Helping make dream come true ✨</h2>
+    </header>
+
+    <main>
+        <form action="">
+            <ul>
+            <li class="question1 wrapper question">
+                <p>If your friend wants to do something dangerous, what would you do?</p>
+
+                <input type="radio" name="question1" id="q1Scold" value="q1Scold">
+                <label for="q1Scold">Tell them off! They're making a bad decision and it's my job to help them</label>
+
+                <input type="radio" name="question1" id="q1Scared" value="q1Scared">
+                <label for="q1Scared">It's probably something scary so they can go ahead but I'm out</label>
+
+                <input type="radio" name="question1" id="q1Villain" value="q1Villain">
+                <label for="q1Villain">Persuade them to do it, dangerous sounds fun</label>
+
+                <input type="radio" name="question1" id="q1Enable" value="q1Enable">
+                <label for="q1Enable">Life's too short, it's an adventure let's go for it!</label>
+            </li>
+
+            <li class="question2 wrapper question">
+                <p>How would your best friend describe you?</p>
+                
+                <input type="radio" name="question2" id="q2Laidback" value="q2Laidback">
+                <label for="q2Laidback">Chill and laid back, I have no cares in the world.</label>
+
+                <input type="radio" name="question2" id="q2Villain" value="q2Villain" >
+                <label for="q2Villain">Dark and mysterious, a bit of a troublemaker</label>
+
+                <input type="radio" name="question2" id="q2Sassy" value="q2Sassy" >
+                <label for="q2Sassy">Sassy, sarcastic with a bit of an attitude </label>
+
+                <input type="radio" name="question2" id="q2Funny" value="q2Funny" >
+                <label for="q2Funny">I'm the class clown, I'm HILARIOUS</label>
+
+                <input type="radio" name="question2" id="q2Responsible" value="q2Responsible" >
+                <label for="q2Responsible">I'm responsible and follow the rules, they're there for a reason</label>
+            </li>
+            
+            <li class="question3 wrapper question">
+                <p>Do you like to sing?</p>
+                <input type="radio" name="question3" id="q3Talker" value="q3Talker">
+                <label for="q3Talker wrapper">Nah but I'm a chatterbox and talk my friend’s ear off</label>
+
+                <input type="radio" name="question3" id="q3Villain" value="q3Villain" >
+                <label for="q3Villain">Only when I'm hatching an evil plan</label>
+
+                <input type="radio" name="question3" id="q3Singer" value="q3Singer">
+                <label for="q3Singer">Of course! I sing better than my friend does, shhh don’t tell them</label>
+
+                <input type="radio" name="question3" id="q3SingingAdvisor" value="q3SingingAdvisor" >
+                <label for="q3SingingAdvisor">I only sing when I have to tell my friend something important, it's the only way they'll listen </label>
+
+                <input type="radio" name="question3" id="q3BodyLanguage" value="q3BodyLanguage" >
+                <label for="q3BodyLanguage">My friend and I communicate non-verbally, it’s all about body language!</label>
+            </li>
+
+            <li class="question4 wrapper question">
+                <p>What is your dream vacation?</p>
+                <input type="radio" name="question4" id="q4Fabulous" value="q4Fabulous">
+                <label for="q4Fabulous">Somewhere fabulous like a villa in Bali </label>
+
+                <input type="radio" name="question4" id="q4Food" value="q4Food">
+                <label for="q4Food">Anywhere as long as there’s lots of good food</label>
+
+                <input type="radio" name="question4" id="q4Book" value="q4Book">
+                <label for="q4Book">As long as I have a book I’m happy</label>
+
+                <input type="radio" name="question4" id="q4Swimming" value="q4Swimming">
+                <label for="q4Swimming">Anywhere close to the ocean so I can go swimming!</label>
+
+                <input type="radio" name="question4" id="q4Life" value="q4Life">
+                <label for="q4Life">Don’t need a vacation, LIFE is a vacation </label>
+            </li>
+
+            <div class="submitButton wrapper">
+                    <input type="submit" value="Which Disney Sidekick Am I?">
+            </div>
+            </ul>
+        </form>
+
+        <section class="results wrapper" id="sidekickResult">
+
+
+        </section>
+
+        </main>
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="script.js"></script>
+</body>
+</html>

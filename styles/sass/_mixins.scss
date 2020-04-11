@@ -1,0 +1,15 @@
+$accentFont: 'Berkshire Swash', cursive;
+$accentColor: lightblue;
+
+@mixin padding-top($top) {
+    padding-top: $top * 10px;
+}
+
+
+@mixin fontSize($sizeValue) {
+  font-size: $sizeValue * 1px;
+  font-size: ($sizeValue/10) * 1rem;
+}
+
+
+
